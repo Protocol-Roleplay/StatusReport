@@ -3,7 +3,7 @@
 commit=true
 
 # Path to urls.cfg will come from private repo clone
-urlsConfig="private-config/urls.cfg"
+urlsConfig="public/urls.cfg"
 
 echo "Reading $urlsConfig"
 declare -a KEYSARRAY
