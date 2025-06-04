@@ -21,7 +21,7 @@ jobs:
         env:
           PRIVATE_REPO_PAT: ${{ secrets.PRIVATE_REPO_PAT }}
         run: |
-          git clone https://x-access-token:${PRIVATE_REPO_PAT}@github.com/YourOrg/YourPrivateRepo.git private-config
+          git clone https://x-access-token:${PRIVATE_REPO_PAT}@github.com/Protocol-Roleplay/Status.git private-config
 
       - name: Run health checks and generate logs
         run: bash ./scripts/health-check.sh
