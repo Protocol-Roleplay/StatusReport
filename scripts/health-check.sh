@@ -46,7 +46,7 @@ do
   if [[ $commit == true ]]
   then
     echo "$dateTime, $result, $time_total" >> "status/${key}_report.log"
-    tail -2000 "status/${key}_report.log" > "status/${key}_report.log.tmp"
+    tail -25920 "status/${key}_report.log" > "status/${key}_report.log.tmp"
     mv "status/${key}_report.log.tmp" "status/${key}_report.log"
   else
     echo "    $dateTime, $result, $time_total"
